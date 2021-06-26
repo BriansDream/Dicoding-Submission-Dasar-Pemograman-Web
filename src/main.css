@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+
+#main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 32px;
+
+
+}
+
+.jumbotron .big-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    opacity: 0.95;
+    max-height: 800px;
+
+}
+
+.big-image {
+    overflow: hidden;
+}
+
+.big-image img:hover {
+    opacity: 1;
+    transform: scale(1.5) rotate(-10deg);
+}
+
+/* Last jumbotron */
+
+
+/* About */
+.about {
+    display: flex;
+    /* Jangan gunakan ini lagi */
+    /* width: 1440px;
+    margin: 0 auto; */
+    margin-bottom: 32px;
+}
+
+.about .text {
+    flex-basis: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f8f6;
+    padding: 32px 48px;
+}
+
+.text h1 {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text p {
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.cta {
+    padding: 7px 16px;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+
+}
+
+.cta:hover {
+    background-color: rgb(236, 41, 41);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.about .image {
+    flex-basis: 50%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.about .image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.About .right-about img:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Last About */
+
+/* Aside */
+
+aside .owner {
+    display: flex;
+    margin-bottom: 32px;
+
+}
+
+aside .owner .image {
+    display: flex;
+    /* width: 50%; */
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.owner .image img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.5) rotate(-8deg);
+}
+
+aside .owner .text {
+    /* width: 50%; */
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f1f8f6;
+}
+
+aside .owner .text h1 {
+    margin-bottom: 24px;
+    font-size: 1.5em;
+}
+
+aside .owner .text p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: 24px;
+}
+
+/* Last aside */
+
+/* Location */
+.location {
+    margin-bottom: 32px;
+}
+
+.location .map {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 511px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about .text h1 {
+        letter-spacing: normal;
+    }
+
+
+    .owner {
+        flex-direction: column;
+
+    }
+
+    aside .owner .text h1 {
+        font-size: 1.3em;
+        padding-top: 20px;
+
+    }
+
+}

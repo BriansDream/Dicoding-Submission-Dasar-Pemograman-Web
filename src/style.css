@@ -1,162 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-/* Montserrat Alternate */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@800;900&display=swap');
-
 * {
-    box-sizing: border-box;
-
+    margin: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-}
-
-.jumbotron {
-    font-size: 2em;
-    padding: 60px;
-    color: #ffffff81;
-    text-align: center;
-    background-image: url('./img/jumbotron.jpg');
-    object-fit: cover;
-    object-position: center;
-
-}
-
-article {
-    box-shadow: 0 4px 08px 0 rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.imgArticle {
-
-    width: 100%;
-    max-height: 500px;
-    border-radius: 10px;
-    background-size: contain;
-    object-fit: cover;
-    object-position: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    display: inline;
+    height: 101px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 0px 2px;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    height: 100%;
 }
 
 
-nav {
-    background-color: #1c1d1f;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 50%, #ffffff 100%);
-    padding: 5px;
-    position: sticky;
-    top: 0;
 
+.left-content .logo img {
+    width: 64px;
+    height: 64px;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+
+    display: flex;
 
 }
 
-ul li a {
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: rgb(141, 138, 153);
+    font-weight: 700;
+    color: rgb(99, 99, 99);
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+
 }
 
 a:hover {
-
-    transition: all 0.3s ease-in;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-ul li {
-    display: inline;
-    margin-right: 30px;
-    list-style-type: none;
+.header-container .right-content .our-store {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    color: rgb(125, 39, 206);
+    ;
 }
 
-/* li::before,
-li::after {
-    content: ;
-    border-bottom: 1px;
-// Pseudo element on going
-} */
-
-
-
-header,
-h1,
-h2 {
-    font-family: 'Montserrat', sans-serif;
+.our-store:hover {
+    background-color: aliceblue;
 }
 
-p,
-h3 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1em;
+.our-store a {
+    text-decoration: none;
 }
 
-
-
-
-iframe {
-    width: 100%;
-    height: 500px;
-    border-radius: 4px;
-}
-
-main {
-    padding: 20px;
-    overflow: auto;
-
-}
-
-#content {
-    width: 75%;
-    float: left;
-}
-
-aside .owner {
-    border-radius: 50%;
-    width: 200px;
-
-border-style: f;
-}
-
-aside {
-    box-shadow: rgba(0, 0, 0, 0.2);
-    float: right;
-    width: 25%;
-    padding-left: 20px;
-}
-
-aside .profile {
-    text-align: center;
-}
-
-aside section table {
-    text-align: left;
-}
-
-article table {
-    font-family: 'Montserrat Alternates', sans-serif;
-}
-
-.Footer {
-    padding: 5px;
-    background-color: #8EC5FC;
-    color: black;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* CSS Media Query mengatur tampilan pada ukuran tertentu */
-@media screen and (max-width: 900px) {
-
-    #content,
-    aside {
-        width: 100%;
-        padding: 0;
+@media screen and (max-width: 511px) {
+    .header-container {
+        justify-content: space-evenly;
     }
-
-
 
 
 }
